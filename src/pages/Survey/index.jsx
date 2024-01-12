@@ -8,7 +8,7 @@ function Survey() {
  
     return (
         <div>
-            <h1>Questionnaire 🧮</h1>
+            <h1>Faire le test 🧮</h1>
             <h2>Question {questionNumber}</h2>
             <Link to={`/survey/${backQuestion}`}>précédent</Link>
               {questionNumberInt === 10? (
