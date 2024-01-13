@@ -5,13 +5,20 @@ import Home from './pages/Home/'
 import Survey from './pages/Survey/'
 import Results from './pages/Results/'
 import Freelances from './pages/Freelances/'
-import Error from './pages/Error/'
+import Error from './components/Error/'
 import Header from './components/Header'
+import { createGlobalStyle }from 'styled-components'
 
+const GlobalStyle = createGlobalStyle`
+    div {
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+`
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <GlobalStyle />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
