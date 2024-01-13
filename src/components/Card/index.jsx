@@ -6,6 +6,8 @@ import  colors  from '../../utils/style/colors'
 const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
     background-color: ${colors.backgroundLight};
     border-radius: 30px;
@@ -20,7 +22,7 @@ function Card({ label, title, picture }) {
     return (
         <CardWrapper>
             <span>{label}</span>
-            <img src={picture} alt="freelance" height={80} width={80} />
+            <img src={picture} alt="freelance" height={150} width={150} />
             <span>{title}</span>
         </CardWrapper>
     )

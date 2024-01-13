@@ -1,5 +1,6 @@
 import Card from '../../components/Card'
 import { styled }from 'styled-components'
+
  
 const freelanceProfiles = [
     {
@@ -23,11 +24,20 @@ const CardsContainer = styled.div`
     grid-template-rows: 350px 350px;
     grid-template-columns: repeat(2, 1fr);
 `
+const AllPageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+
+    
+`
 
 function Freelances() {
     return (
-        <div>
-            <h1>Profils 👩‍💻👨‍💻👩‍💻</h1>
+        <AllPageContainer>
+            <h1>Trouvez votre prestataire</h1>
+            <p>Chez Shiny nous réunissons les meilleurs profils pour vous.</p>
             <CardsContainer>
             {freelanceProfiles.map((profile, index) => (
                 <Card
@@ -38,7 +48,7 @@ function Freelances() {
                 />
             ))}
             </CardsContainer>
-        </div>
+        </AllPageContainer>
     )
 }
 export default Freelances
