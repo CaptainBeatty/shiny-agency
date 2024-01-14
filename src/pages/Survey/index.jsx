@@ -26,10 +26,6 @@ const LinkWrapper = styled.div`
     margin-right: 20px;
   }
 `
-
-
-
- 
 function Survey() {
     const { questionNumber } = useParams()
     const questionNumberInt = parseInt(questionNumber);
